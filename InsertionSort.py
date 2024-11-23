@@ -7,3 +7,5 @@ for i in range(1,len(arr)):
         arr[j+1]  = arr[j]
         j-=1
     arr[j+1] = current
+
+    # space comp[lexity- o(n)   time complexity - o(n^2)
