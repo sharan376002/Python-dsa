@@ -15,4 +15,4 @@ while l<=r:
         l= mid+1 
     
     elif target < nums[mid]:
-        r = mid-1
+        r = mid-1  
