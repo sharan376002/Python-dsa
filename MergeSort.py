@@ -1,6 +1,7 @@
 # merger  Sort
 #  o(n)   - space
 #0(nlongn)   - time 
+# divide and conqure algorithm
 
 def MergeSort(array):
     if len(array)>1:
