@@ -1,4 +1,5 @@
 # bubble Sort
+# time complexity n^2
 
 # IT compare the Rwo Values and then Swaps 
 
