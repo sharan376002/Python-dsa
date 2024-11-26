@@ -12,3 +12,7 @@ def fact(n):
     return n*fact(n-1)  # the values stores in the stack
 
 print(fact(n))
+
+
+
+# recursion is the impotartant topic please solve problems on it...
