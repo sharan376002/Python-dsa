@@ -6,6 +6,12 @@
 
 # the array must be sorted 
 
+
+# time complexity in using of two poin=ter algorithm  - o(n)
+# In the normal way the time complexity is o(n^2)
+
+#TWo sums probles
+
 arr = [1,2,3,4,5,6]
 
 target = 11
