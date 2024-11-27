@@ -1,0 +1,10 @@
+# Stacks are the linear data structures
+#LIFO  = Last in Fisrt Out - 
+# FiLO  = Fisrt in LAst Out 
+"""
+|    8   |
+|   7    |
+|   6    |
+|____5____|
+
+"""
