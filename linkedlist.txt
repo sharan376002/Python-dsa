@@ -1,0 +1,5 @@
+the linkedlist is a conncetion of mutiple list
+
+-- it contains two field, data , pointer, 
+-- data -  the data field is used to store value in the list
+-- pointer  - it stores a memory address of the previous element for connection 
