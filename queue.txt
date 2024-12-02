@@ -8,7 +8,7 @@ queue operations
 -Front  to see the first value in the queue
 -isempty
 
-- queue is like a queue in the ticket booking , bank like that
+- queue is like a queue in the ticket booking , bank like that, any queue based systmes..
 
 ------------------------------------------
 Types of queue
