@@ -11,7 +11,7 @@ qu.append(9)
 qu.append(2)
 print(qu)
 
-#dequeue
+#dequeue  
 a = qu.pop(0)
 b = qu.pop(0)
 print(a,b)
