@@ -3,3 +3,9 @@ the linkedlist is a conncetion of mutiple list
 -- it contains two field, data , pointer, 
 -- data -  the data field is used to store value in the list
 -- pointer  - it stores a memory address of the previous element for connection 
+
+the linked list contains head , tail
+  - head = starting node in the linked list
+  - tail = ending value in the linked list
+ -- each element is represented as a Node
+ the Node contains a data , pointer
