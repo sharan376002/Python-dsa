@@ -9,3 +9,8 @@ the linked list contains head , tail
   - tail = ending value in the linked list
  -- each element is represented as a Node
  the Node contains a data , pointer
+
+-- linkedlist operations     starting  |  Middle   | End  |  # time complexity
+- Insertions                  O(1)         O(n)     O(n)
+- deletion                    O(1)         O(n)     O(n)
+- search                      O(1)         O(n)     O(n)
