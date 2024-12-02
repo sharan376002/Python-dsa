@@ -14,14 +14,17 @@ queue operations
 Types of queue
 - simple queue
   it is a normal queue insert in one side and accesing in another side
+---------------------
 
 - double ended queue
 it is a combination of queue and stack, we can access and insert on both the sides 
 
+--------------------------
 - circular queue
 
 it is in a circular shape , it used in traffic signals
 
+--------------------------
 - priority queue
 it gives a prior to the some value 
 
