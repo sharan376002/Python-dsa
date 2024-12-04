@@ -1,6 +1,7 @@
 # node in class'
 # creating of node
 
+
 class node:
     data = None
     pointer = None
