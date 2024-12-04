@@ -63,5 +63,6 @@ l1.add(2)
 l1.add(5)
 l1.add(6)
 
-print(l1.printData)
 print(l1.remove(6))
+print(l1.printData())
+
