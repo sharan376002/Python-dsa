@@ -26,7 +26,29 @@ class linkedlistOpertation:
             cur = cur.pointer
     
     def remove(self,data):
+        if (self.head is not None):
+            if(self.head.data == data):
+                self.head = self.head.pointer
+                print("Succesfully the value removed from the node")
+            else:
+                cur = self.head
+
+                while(cur.pointer is not None and cur.pointer.data != data):
+                    cur = cur.pointer
+
+                if cur.pointer is not None:
+                    cur.pointer = cur.pointer.pointer
+                    print("Succesfully the value removed from the Middle node")
+
+
+                else:
+                    print("the Remove value is not present in the linkid list")        
+
+
+
         
+        else:
+            print("the linkedlist is empty")    
 
 
 
@@ -40,4 +62,6 @@ l1.add(1)
 l1.add(2)
 l1.add(5)
 l1.add(6)
+
 print(l1.printData)
+print(l1.remove(6))
