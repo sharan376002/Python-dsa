@@ -32,10 +32,18 @@ class Tree:
 
         for child in node.children:
             nodefound = self.findparentnode(par_data, child)
-            if not nodefound:
+            if  nodefound:
                 return nodefound
 
         return None        
+    
+
+    def display(self,depth=0, node=None):
+        if not node:
+            node = self.root
+        print(" " * depth+str(node.data)) 
+        for child in node.children:
+            self.display(depth+1,child)   
 
 
 
@@ -48,4 +56,5 @@ t1.Add(4,2)
 t1.Add(5,3)
 t1.Add(6,4)
 t1.Add(7,4)
+t1.display()
 
