@@ -12,3 +12,9 @@ Tree
 
 height = maxiu height of the tree from the root to end
 depth = the calculate the height btw the nodes
+
+we can do same  operations like a linked list , 
+-- add
+-- remove
+-- search 
+-- display
