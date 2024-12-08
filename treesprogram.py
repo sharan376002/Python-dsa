@@ -44,9 +44,22 @@ class Tree:
             self.root = None
             return
         parentnode = self.findparentnoderm(data.self.root)
+        if parentnode:
+            for child in parentnode.children:
+                if child.data == data:
+                    parentnode.children.remove(child)
+        else:
+            print("Node not found")            
 
     def findparentnoderm(self,data,node):
-               
+        for child in node.children:
+            if child.data ==data:
+                return data
+            nodefound = self.findparentnoderm(data,child)
+            if nodefound:
+                return nodefound
+        return None
+
         
     
 
