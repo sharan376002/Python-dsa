@@ -35,7 +35,15 @@ class Tree:
             if  nodefound:
                 return nodefound
 
-        return None        
+        return None     
+    # for remove the value from the node
+    def remove(self,data):
+        if not self.root:
+            print("The tree is empty")
+        if self.root.data == data:
+            self.root = None
+            return
+        
     
 
     def display(self,depth=0, node=None):
