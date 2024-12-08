@@ -30,7 +30,19 @@ class Binary_tree:
 
         else:
              self._recursiveadd(data, node.left)  # we can pass also right side 
-             return       
+             return      
+
+    def Display(self,depth=0,node=None):
+        if node is not None:
+            node =  self.root
+
+        print(" "*depth,node.data)
+
+        if node.left is not None:
+            self.Display(depth+1,node.left)
+        if node.right is not None:
+            self.Display(depth+1,node.right)        
+
 
 
 t2 = Binary_tree()
