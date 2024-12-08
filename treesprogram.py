@@ -43,6 +43,10 @@ class Tree:
         if self.root.data == data:
             self.root = None
             return
+        parentnode = self.findparentnoderm(data.self.root)
+
+    def findparentnoderm(self,data,node):
+               
         
     
 
