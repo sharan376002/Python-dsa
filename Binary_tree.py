@@ -1,4 +1,4 @@
-from typing import Self
+
 
 
 class Node:
@@ -17,16 +17,27 @@ class Binary_tree:
             self.root = Node(data)
             return
 
-        self.recursiveadd(data,self.root)
+        self._recursiveadd(data,self.root)
 
-    def recursiveadd(data,node):
+    def _recursiveadd(self,data,node):
         if node.left is None:
             node.left = Node(data)
+            return
 
         elif node.right is None:
             node.right = Node(data)
+            return
 
         else:
-             self.recursiveadd(data,node.left)  # we can pass also right side also        
+             self._recursiveadd(data, node.left)  # we can pass also right side 
+             return       
+
+
+t2 = Binary_tree()
+t2.Add(1)
+t2.Add(2)
+t2.Add(3)
+t2.Add(4)
+
 
         
