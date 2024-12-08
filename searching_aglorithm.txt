@@ -1,8 +1,0 @@
-the two searching algorithms 
--- linear search
-     it is a linear searching algorithm 
-     it works on best case o(1), on worst case on(n)
-
--- binear search 
-      it is a divide and conqur algorithm
-      it works in n(logn) complexity
