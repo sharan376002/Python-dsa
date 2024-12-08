@@ -40,21 +40,27 @@ class Tree:
     def remove(self,data):
         if not self.root:
             print("The tree is empty")
-        if self.root.data == data:
-            self.root = None
             return
-        parentnode = self.findparentnoderm(data.self.root)
-        if parentnode:
-            for child in parentnode.children:
+
+        if self.root.data == data:
+            if self.root.children:
+                print("Cannot remove root as it has children. Clear children first.")
+            else:
+                 self.root = None
+            return
+        parent_node = self.findparentnoderm(data,self.root)
+
+        if parent_node:
+            for child in parent_node.children:
                 if child.data == data:
-                    parentnode.children.remove(child)
+                    parent_node.children.remove(child)
         else:
             print("Node not found")            
 
     def findparentnoderm(self,data,node):
         for child in node.children:
-            if child.data ==data:
-                return data
+            if child.data == data:
+                return node
             nodefound = self.findparentnoderm(data,child)
             if nodefound:
                 return nodefound
@@ -81,5 +87,8 @@ t1.Add(4,2)
 t1.Add(5,3)
 t1.Add(6,4)
 t1.Add(7,4)
+t1.display()
+print("\n \n")
+t1.remove(5)
 t1.display()
 
