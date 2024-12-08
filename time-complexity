@@ -1,8 +1,0 @@
-time complexity and space complexity
-
-# big(o) notation 
--- o(1) constant
--- 0(n) linear
--- o(logn) logrithmic  # biner search
--- o(nlogn) ,,  ,,     # merge sort
--- o(n^2)  quadratic

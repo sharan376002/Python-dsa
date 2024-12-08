@@ -1,5 +1,0 @@
-# Space complexity
-
--- o(1) constant space
-    if it is a constant integer valeu doesn't change
-

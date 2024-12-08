@@ -1,8 +1,0 @@
-stacks 
-heaps
-
-- the local variabel stores the values into the heap and then the address of the heap is stores to the stack
-
-if repeated the values occurs then it will store the same value into same address
-
-
