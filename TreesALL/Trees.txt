@@ -1,0 +1,20 @@
+Tree 
+-  non linear data structures
+
+              1------------------   # ROOT NODE 
+           /    \------------------ #edges
+          2       3---------------  # parent
+         / \     /  \    ^
+       4   5     6  7------------   # child
+                   / \ 
+                   10  9---------- #leaf node
+
+
+height = maxiu height of the tree from the root to end
+depth = the calculate the height btw the nodes
+
+we can do same  operations like a linked list , 
+-- add
+-- remove
+-- search 
+-- display
