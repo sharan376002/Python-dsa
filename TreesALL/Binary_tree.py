@@ -41,7 +41,47 @@ class Binary_tree:
         if node.left is not None:
             self.Display(depth+1,node.left)
         if node.right is not None:
-            self.Display(depth+1,node.right)        
+            self.Display(depth+1,node.right)    
+
+    
+    def remove(self,data):
+        if not self.root:
+            print("The binary tree is empty")
+            return
+        if self.root.data == data:
+            self.root = None
+
+        self.recursiveremove(data,self.root)
+
+    def recursiveremove(self,data,node):
+        if node.left and node.left.data == data:
+            node.left = None
+
+        if node.right and node.right.data == data:
+            node.right = None
+
+        if node.left:
+            self.recursiveremove(data,node.left)
+        if node.right:
+            self.recursiveremove(data,node.right)
+    
+    def search(self,data):
+        nodefound = self.recursivesearch(data,self.root)
+
+        if nodefound:
+            print("true")
+
+        else:
+            print("false")    
+
+    def recursivesearch(self,data,node):
+
+        if not node or node.data == data:
+            return node
+
+
+        return self.recursivesearch(data,node.left) or self.recursivesearch(data,node.right)    
+
 
 
 
