@@ -33,7 +33,7 @@ class Binary_tree:
              return      
 
     def Display(self,depth=0,node=None):
-        if node is not None:
+        if node is None:
             node =  self.root
 
         print(" " * depth * 2, node.data)
