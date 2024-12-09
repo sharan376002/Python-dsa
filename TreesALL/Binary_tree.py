@@ -36,7 +36,7 @@ class Binary_tree:
         if node is not None:
             node =  self.root
 
-        print(" "*depth,node.data)
+        print(" " * depth * 2, node.data)
 
         if node.left is not None:
             self.Display(depth+1,node.left)
@@ -95,6 +95,7 @@ t2.Add(6)
 t2.Display()
 t2.remove(4)
 t2.Display()
+t2.search(3)
 
 
 
