@@ -2,3 +2,35 @@
 # greater than the root valeu stores in the right side of the tree
 
 # binary search tree BST
+
+class BSTnode:
+    def __init__(self,data):
+        self.data = data
+        self.left = None
+        self.right = None
+
+
+class BinarySearchTree:
+    def __init__(self):
+        self.root = None
+
+    def Add(self,data):
+        if not self.root:
+            self.root = BSTnode(data)
+            return
+        self.recursiveadd(data,self.root)
+
+    def recursiveadd(self,data,node):
+        if data <node.data:
+            if not node.left:
+                node.left = BSTnode(data)
+            else:
+                self.recursiveadd(data,node.left)
+        elif data > node.data:
+            if not node.right:
+                node.right = BSTnode(data)
+            else:
+                self.recursiveadd(data,node.right)
+                                    
+
+        
