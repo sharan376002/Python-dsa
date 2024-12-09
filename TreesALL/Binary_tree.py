@@ -90,6 +90,14 @@ t2.Add(1)
 t2.Add(2)
 t2.Add(3)
 t2.Add(4)
+t2.Add(5)
+t2.Add(6)
+t2.Display()
+t2.remove(4)
+t2.Display()
+
+
+
 
 
         
