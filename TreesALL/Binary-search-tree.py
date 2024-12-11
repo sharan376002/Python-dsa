@@ -31,6 +31,11 @@ class BinarySearchTree:
                 node.right = BSTnode(data)
             else:
                 self.recursiveadd(data,node.right)
-                                    
+
 
         
+bst1 = BinarySearchTree()
+bst1.Add(10)
+bst1.Add(5)
+bst1.Add(60)
+bst1.Add(90)
