@@ -32,6 +32,9 @@ class BinarySearchTree:
             else:
                 self.recursiveadd(data,node.right)
 
+    def display(self)
+                
+
 
         
 bst1 = BinarySearchTree()
