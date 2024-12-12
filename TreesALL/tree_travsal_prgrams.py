@@ -40,10 +40,33 @@ class BinarySearchTree:
         print(result)
 
     def recursiveInorder(self,node,result):
+        if not node:
+            return None
+        
+        else:
+            self.recursiveInorder(node.left,result)
+            result.append(node.data)
+            self.recursiveInorder(node.right,result)
+
 
 
     def preordertravsal(self,node,result):
+        if not node:
+            return None
+        
+        else:
+            result.append(node.data)
+            self.recursiveInorder(node.left,result)
+            self.recursiveInorder(node.right,result)
 
 
-    def postordertravsal(self,node,result)            
+    def postordertravsal(self,node,result):
+        if not node:
+            return None
+        
+        else:
+            self.recursiveInorder(node.left,result)
+            self.recursiveInorder(node.right,result)
+            result.append(node.data)
+
 
