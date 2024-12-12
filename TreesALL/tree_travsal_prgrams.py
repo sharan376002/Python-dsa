@@ -10,3 +10,12 @@ class BSTnode:
 class BinarySearchTree:
     def __init__(self):
         self.root = None
+
+
+    def display(self):
+
+        result = []
+
+        self.recursiveinorder(self.root,result)
+        print(result)
+            
