@@ -16,6 +16,14 @@ class BinarySearchTree:
 
         result = []
 
-        self.recursiveinorder(self.root,result)
+        self.recursiveInorder(self.root,result)
         print(result)
-            
+
+    def recursiveInorder(self,node,result):
+
+
+    def preordertravsal(self,node,result):
+
+
+    def postordertravsal(self,node,result)            
+
