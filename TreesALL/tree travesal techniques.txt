@@ -10,4 +10,6 @@ these are the techniquesare used in the tree to print the values in ascending an
 
 --inorder [Left, current,right]
 --PostOrder [current,left,right]
--- preorder[left,right,cu]
+-- preorder[left,right,current]
+
+[BFS]  Breadth first techniques
