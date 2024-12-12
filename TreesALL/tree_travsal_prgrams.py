@@ -15,8 +15,28 @@ class BinarySearchTree:
     def display(self):
 
         result = []
+        print("Select the which order u wan to do in the tree")
+        print("\n 1. Inorder \n 2. preOrder  \n 3.Post Order")
+        choice = int(input("Enter the choice btw them : "))
+        if choice==1:
+            print("Inorder: ")
+            self.recursiveInorder(self.root,result)
+            print(result)
 
-        self.recursiveInorder(self.root,result)
+        elif choice==2:
+            print("Preorder : ")
+            self.preordertravsal(self.root,result)
+            print(result)
+
+
+        elif choice==3:
+            self.postordertravsal(self.root,result)
+            print(result)
+
+            
+
+
+
         print(result)
 
     def recursiveInorder(self,node,result):
