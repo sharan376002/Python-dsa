@@ -88,3 +88,17 @@ class BinarySearchTree:
             result.append(node.data)
 
 
+        
+bst1 = BinarySearchTree()
+bst1.Add(10)
+bst1.Add(5)
+bst1.Add(60)
+bst1.Add(50)
+bst1.Add(70)
+bst1.Add(6)
+bst1.Add(9)
+bst1.Add(17)
+bst1.Add(19)
+bst1.display()
+
+
