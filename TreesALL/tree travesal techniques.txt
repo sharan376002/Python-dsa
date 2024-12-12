@@ -1,0 +1,13 @@
+
+
+Tree travsal techniques [DFS] depth first search
+
+-- pre order
+-- post order
+-- inorder 
+
+these are the techniquesare used in the tree to print the values in ascending and decending order
+
+--inorder [Left, current,right]
+--PostOrder [current,left,right]
+-- preorder[left,right,cu]
