@@ -90,5 +90,6 @@ t1.Add(8,4)
 t1.display()
 print("\n \n")
 t1.remove(5)
+t1.remove(8)
 t1.display()
 
