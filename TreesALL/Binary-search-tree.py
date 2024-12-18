@@ -45,7 +45,12 @@ class BinarySearchTree:
     def recursiveremove(self,node,data):
         if node.left and node.left.data==data:
             node.left = None
-        elif node.right and node.right                     
+        elif node.right and node.right.data == data:
+            node.right = None
+        elif data < node.data:
+            self.recursiveremove(node.left,data)
+        elif data > node.right:
+            self.recursiveremove(node.right,data)                         
     
 
 
