@@ -32,6 +32,14 @@ class BinarySearchTree:
             else:
                 self.recursiveadd(data,node.right)
 
+
+    def remove(self,data):
+        if self.root is None:
+            print("tree is empty")
+            return
+        if self.root.data==data:
+            self.root = None
+            return            
     
 
 
