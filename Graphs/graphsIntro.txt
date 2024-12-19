@@ -5,12 +5,15 @@
 -- building a network
 -- how many edges are joined in the vertex is called degree
 
-           A 
-             \
-              \
-               B
+            A  -----> vertex
+            |-------> edges
+            |
+             B------>3degree  3 edges are joined in the vertex
           /    \
-         /      \ 
-       D  - - - 
+        /      \ 
+       D  - - - C
        
-       
+vertex
+edges
+path
+cycle
