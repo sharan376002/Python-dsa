@@ -2,3 +2,5 @@
 
 
 --connecting relation between the nodes in the graphs
+-- building a network
+-- how many edges are joined in the vertex is called degree
