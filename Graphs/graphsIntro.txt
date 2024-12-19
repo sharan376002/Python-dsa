@@ -22,3 +22,8 @@ cycle -  starts from a to ends at a
 -> undirected graphs  => two way
 -> weighted graphs   =>value between A and b vertex in the edges 
 -> unweighted graphs => no values in the edges
+
+key : value
+A:[B]
+B:[A,C,D]
+C:[D,B]
