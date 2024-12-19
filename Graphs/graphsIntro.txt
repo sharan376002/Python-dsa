@@ -13,7 +13,12 @@
         /      \ 
        D  - - - C
        
-vertex
-edges
-path
-cycle
+vertex - a,b,c,d
+edges - 
+path - abcd, abd
+cycle -  starts from a to ends at a  
+
+-> directed Graphs  => one way
+-> undirected graphs  => two way
+-> weighted graphs   =>value between A and b vertex in the edges 
+-> unweighted graphs => no values in the edges
