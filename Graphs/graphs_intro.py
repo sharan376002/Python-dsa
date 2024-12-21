@@ -29,4 +29,13 @@ class graphs:
     def getedges(self):
         for key,value in self.graph.items():
             for vetex in value:
-                print(f"{(key)},{(value)}")          
+                print(f"{(key)},{(value)}")      
+
+    def removeVertex(self,vertex):
+
+        if vertex in self.graph:
+            del self.graph[vertex]       
+            
+        for key,value in self.graph.items():
+            if vertex in value:
+                value.remove(vertex)             
