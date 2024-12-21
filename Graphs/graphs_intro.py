@@ -24,4 +24,9 @@ class graphs:
 
     def getVertex(self):
         for i in self.graph:
-            print(i)     
+            print(i) 
+
+    def getedges(self):
+        for key,value in self.graph.items():
+            for vetex in value:
+                print(f"{(key)},{(value)}")          
