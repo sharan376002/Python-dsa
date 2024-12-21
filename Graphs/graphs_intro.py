@@ -17,3 +17,7 @@ class graphs:
         self.graph[vertex1].append(vertex2)
         if not _isdirected:
             self.graph[vertex2].append(vertex1)
+
+    def display(self):
+        for key,value in self.graph.items():
+            print(f"{key},{value}")        
