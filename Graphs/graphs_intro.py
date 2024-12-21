@@ -20,4 +20,8 @@ class graphs:
 
     def display(self):
         for key,value in self.graph.items():
-            print(f"{key},{value}")        
+            print(f"{key},{value}")    
+
+    def getVertex(self):
+        for i in self.graph:
+            print(i)     
