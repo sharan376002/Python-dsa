@@ -39,3 +39,7 @@ class graphs:
         for key,value in self.graph.items():
             if vertex in value:
                 value.remove(vertex)             
+
+
+v1 = graphs()
+v1.addedges
