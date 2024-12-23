@@ -42,4 +42,4 @@ class graphs:
 
 
 v1 = graphs()
-v1.addedges
+v1.addedges()
