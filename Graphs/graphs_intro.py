@@ -41,3 +41,4 @@ class graphs:
                 value.remove(vertex)             
 
 
+v1 = graphs()
