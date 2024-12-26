@@ -41,11 +41,3 @@ class graphs:
                 value.remove(vertex)             
 
 
-v1 = graphs()
-v1.addedges()
-
-v1.getedges()
-v1.getVertex()
-v1.display()
-v1.removeVertex()
-v1.addvertex()
