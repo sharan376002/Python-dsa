@@ -38,7 +38,16 @@ class graphs:
             
         for key,value in self.graph.items():
             if vertex in value:
-                value.remove(vertex)             
+                value.remove(vertex)  
+
+    def dfs_travsal(self,start,alreadyexist=set()):
+        if start not in alreadyexist:
+            alreadyexist.add(start)
+            print(start,end=" ")
+
+
+        for child in self.graph[start]:
+            self.dfs_travsal(child,alreadyexist)                           
 
 
 v1 = graphs()
