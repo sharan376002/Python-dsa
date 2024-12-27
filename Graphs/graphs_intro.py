@@ -51,3 +51,8 @@ class graphs:
 
 
 v1 = graphs()
+v1.addedges("A","B")
+v1.addedges("B","C")
+v1.addedges("C","D")
+v1.addedges("D","B")
+
