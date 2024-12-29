@@ -58,6 +58,12 @@ class graphs:
             print(current,end="")
 
 
+            for child in self.graph[current]:
+                if child not in alreadyexist:
+                    queue.append(child)
+                    alreadyexist.add(child)
+
+
 
 v1 = graphs()
 v1.addedges("A","B")
