@@ -54,7 +54,9 @@ class graphs:
         queue = []
 
         while len(queue)>0:
-                                    
+            current = queue.pop(0)
+            print(current,end="")
+
 
 
 v1 = graphs()
