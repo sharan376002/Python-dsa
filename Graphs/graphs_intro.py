@@ -64,6 +64,12 @@ class graphs:
                     alreadyexist.add(child)
 
 
+    # Shortest Path
+    def ShortestPath_bfs(self,start,end):
+        alreadyexist = {start}
+        queue = [(start,[start])]                
+
+
 
 v1 = graphs()
 v1.addedges("A","B")
