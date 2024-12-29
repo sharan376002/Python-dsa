@@ -67,7 +67,20 @@ class graphs:
     # Shortest Path
     def ShortestPath_bfs(self,start,end):
         alreadyexist = {start}
-        queue = [(start,[start])]                
+        queue = [(start,[start])]   
+
+
+        while len(queue)>0:
+            current,path = queue.pop(0)
+            print(current,end="")
+
+
+            for child in self.graph[current]:
+                if child == end:
+                    return path + [child]
+                if child not in alreadyexist:
+                    queue.append(child,path+[child])
+                    alreadyexist.add(child)             
 
 
 
