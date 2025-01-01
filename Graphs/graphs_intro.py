@@ -47,10 +47,10 @@ class graphs:
 
 
         for child in self.graph[start]:
-            self.dfs_travsal(child, alreadyexist)   
+            self.dfs_travsal(child, alreadyexist)
 
     def bfs_travsal(self,start):
-        alreadyexist = {}
+        alreadyexist = {start}
         queue = []
 
         while len(queue)>0:
