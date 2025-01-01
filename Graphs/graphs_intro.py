@@ -40,6 +40,7 @@ class graphs:
             if vertex in value:
                 value.remove(vertex)  
 
+    # depth first search
     def dfs_travsal(self,start,alreadyexist=set()):
         if start not in alreadyexist:
             alreadyexist.add(start)
@@ -48,7 +49,8 @@ class graphs:
 
         for child in self.graph[start]:
             self.dfs_travsal(child, alreadyexist)
-
+    
+    # breadth first search
     def bfs_travsal(self,start):
         alreadyexist = {start}
         queue = []
