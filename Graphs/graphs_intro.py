@@ -3,7 +3,8 @@
 class graphs:
     def __init__(self):
         self.graph = {}
-    
+
+   # adding the vertex like adding them  
     def addvertex(self,vertex):
         if vertex not in self.graph:
             self.graph[vertex] = []
@@ -31,6 +32,7 @@ class graphs:
             for vetex in value:
                 print(f"{(key)},{(value)}")      
 
+    # remove the vertex
     def removeVertex(self,vertex):
 
         if vertex in self.graph:
