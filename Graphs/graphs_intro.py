@@ -47,7 +47,7 @@ class graphs:
 
 
         for child in self.graph[start]:
-            self.dfs_travsal(child,alreadyexist)   
+            self.dfs_travsal(child, alreadyexist)   
 
     def bfs_travsal(self,start):
         alreadyexist = {}
@@ -79,7 +79,7 @@ class graphs:
                 if child == end:
                     return path + [child]
                 if child not in alreadyexist:
-                    queue.append(child,path+[child])
+                    queue.append((child,path + [child]))
                     alreadyexist.add(child)             
 
 
@@ -88,9 +88,7 @@ v1 = graphs()
 v1.addedges("A","B")
 v1.addedges("B","C")
 v1.addedges("C","D")
-v1.addedges("D","E")
-v1.addedges("D","A")
-v1.addedges("A","")
+
 
 v1.dfs_travsal("A")
 
