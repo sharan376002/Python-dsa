@@ -90,7 +90,7 @@ v1.addedges("B","C")
 v1.addedges("C","D")
 v1.addedges("D","E")
 v1.addedges("D","A")
-v1.addedges("A","E")
+v1.addedges("A","")
 
 v1.dfs_travsal("A")
 
