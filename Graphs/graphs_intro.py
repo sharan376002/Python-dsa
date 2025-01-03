@@ -96,4 +96,6 @@ v1.addedges("B","D")
 
 
 v1.dfs_travsal("A")
+v1.dfs_travsal("B")
+
 
