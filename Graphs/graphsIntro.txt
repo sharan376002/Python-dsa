@@ -8,7 +8,7 @@
             A  -----> vertex
             |-------> edges
             |
-             B------>3degree  3 edges are joined in the vertex
+            B------>3degree  3 edges are joined in the vertex
           /    \
         /      \ 
        D  - - - C
