@@ -9,7 +9,7 @@ class WeightedGraph:
 
     def addVertex(self,vertex):
         if vertex not in self.graph:
-            self.graph = {}    
+            self.graph[vertex] = {}    
         else:
             print("the vertex already exist")
 
@@ -55,8 +55,9 @@ class WeightedGraph:
 
 
 g1 = WeightedGraph()
-g1.addEdges("C" , "B" ,300)
-g1.addEdges("C" , "D" ,1300)
-g1.addEdges("C" , "M" ,800)
-g1.addEdges("M" , "D" ,700)
+g1.addEdges("C", "B", 300)
+g1.addEdges("C", "D", 1300)
+g1.addEdges("C", "M", 800)
+g1.addEdges("M", "D", 700)
+
 g1.display()
