@@ -2,3 +2,14 @@
 # like the distance between the value of two cities ex.. chennai to banglore distance is 300 , the 300 is weight
 
 #weighteed graph
+
+class WeightedGraph:
+    def __init__(self):
+        self.graph = {}
+
+    def addVertex(self,vertex):
+        if vertex not in self.graph:
+            self.graph = {}    
+        else:
+            print("the vertex already exist")
+                
