@@ -12,6 +12,8 @@ class WeightedGraph:
             self.graph = {}    
         else:
             print("the vertex already exist")
+
+
     def addEdges(self,from_vertex,to_vertex,weight,isdirected=False):
         self.addVertex(from_vertex)
         self.addVertex(to_vertex)
@@ -19,7 +21,7 @@ class WeightedGraph:
 
         self.graph[from_vertex][to_vertex] = weight
 
-        if isdirected == False:
+        if isdirected:
             self.graph[to_vertex][from_vertex] = weight
 
 
@@ -31,6 +33,8 @@ class WeightedGraph:
         if to_vertex in self.graph and from_vertex in self.graph[to_vertex]:
             del self.graph[to_vertex][from_vertex]
 
+
+
     def removeVertex(self,vertexs):
         if vertexs in self.graph:
             del self.graph[vertexs]
@@ -40,3 +44,13 @@ class WeightedGraph:
                 del self.graph[vertexIn][vertexs]                
 
 
+
+
+
+
+
+g1 = WeightedGraph()
+g1.addEdges("C","B",300)
+g1.addEdges("C","D",1300)
+g1.addEdges("C","M",800)
+g1.addEdges("M","D",700)
