@@ -12,4 +12,12 @@ class WeightedGraph:
             self.graph = {}    
         else:
             print("the vertex already exist")
-                
+    def addEdges(self,from_vertex,to_vertex,weight,isdirected=False):
+        self.addVertex(from_vertex)
+        self.addVertex(to_vertex)
+
+
+        self.graph[from_vertex][to_vertex] = weight
+
+        if isdirected == False:
+            self.graph[to_vertex][from_vertex] = weight            
