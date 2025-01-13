@@ -1,0 +1,7 @@
+    DYNAMIC PROGAMMING
+
+    problem => subproblem
+
+    ==> bottom up approach (tabulation)
+    ==> top down approach (memoization)
+    
