@@ -15,13 +15,15 @@ class WeightedGraph:
 
 
     def addEdges(self,from_vertex,to_vertex,weight,isdirected=False):
-        self.addVertex(from_vertex)
-        self.addVertex(to_vertex)
+        if from_vertex not in self.graph:
+            self.addVertex(from_vertex)
+        if to_vertex not in self.graph:    
+            self.addVertex(to_vertex)
 
-
+        
         self.graph[from_vertex][to_vertex] = weight
 
-        if isdirected:
+        if not isdirected:
             self.graph[to_vertex][from_vertex] = weight
 
 
@@ -44,13 +46,17 @@ class WeightedGraph:
                 del self.graph[vertexIn][vertexs]                
 
 
-
+    def display(self):
+        # Display the graph
+        for vertex, edges in self.graph.items():
+            print(f"{vertex} -> {edges}")
 
 
 
 
 g1 = WeightedGraph()
-g1.addEdges("C","B",300)
-g1.addEdges("C","D",1300)
-g1.addEdges("C","M",800)
-g1.addEdges("M","D",700)
+g1.addEdges("C" , "B" ,300)
+g1.addEdges("C" , "D" ,1300)
+g1.addEdges("C" , "M" ,800)
+g1.addEdges("M" , "D" ,700)
+g1.display()
