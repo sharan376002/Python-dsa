@@ -4,7 +4,7 @@
 #weighteed graph
 
 class WeightedGraph:
-    def __init__(self):
+    def __init__(self):  # starting of the graph
         self.graph = {}
 
     def addVertex(self,vertex):
@@ -20,4 +20,23 @@ class WeightedGraph:
         self.graph[from_vertex][to_vertex] = weight
 
         if isdirected == False:
-            self.graph[to_vertex][from_vertex] = weight            
+            self.graph[to_vertex][from_vertex] = weight
+
+
+    def RemoveEdges(self,from_vertex,to_vertex):
+
+        if from_vertex in self.graph and to_vertex in self.graph[from_vertex]:
+            del self.graph[from_vertex][to_vertex]
+
+        if to_vertex in self.graph and from_vertex in self.graph[to_vertex]:
+            del self.graph[to_vertex][from_vertex]
+
+    def removeVertex(self,vertexs):
+        if vertexs in self.graph:
+            del self.graph[vertexs]
+
+        for vertexIn in self.graph:
+            if vertexs in self.graph[vertexIn]:
+                del self.graph[vertexIn][vertexs]                
+
+
