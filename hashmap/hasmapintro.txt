@@ -1,0 +1,10 @@
+
+
+
+the hashmap is similar to the dictinary in python 
+ 
+ the value in the hashmao occupied by the index
+
+ some times hash collision will happen ,that time it forms a matrix
+
+ hash value is divided by the total number of value in the dict..
