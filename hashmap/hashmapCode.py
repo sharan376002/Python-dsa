@@ -3,3 +3,6 @@ class HashMap:
         
         self.size = size
         self.hashlist = [None]*self.size
+
+    def getIndex(self,key):
+        return hash(key) % self.size    
