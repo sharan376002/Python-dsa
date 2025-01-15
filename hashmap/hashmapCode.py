@@ -5,4 +5,9 @@ class HashMap:
         self.hashlist = [None]*self.size
 
     def getIndex(self,key):
-        return hash(key) % self.size    
+        return hash(key) % self.size  
+
+    def __setitem__(self,key,value):
+        index = self.getIndex(key)
+
+        if self.hashlist
