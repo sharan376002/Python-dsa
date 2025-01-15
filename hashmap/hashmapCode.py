@@ -10,4 +10,5 @@ class HashMap:
     def __setitem__(self,key,value):
         index = self.getIndex(key)
 
-        if self.hashlist
+        if self.hashlist[index] is None:
+            self.hashlist[index] = [[key,value]]
