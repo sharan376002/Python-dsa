@@ -12,3 +12,9 @@ class HashMap:
 
         if self.hashlist[index] is None:
             self.hashlist[index] = [[key,value]]
+
+
+
+
+
+            
