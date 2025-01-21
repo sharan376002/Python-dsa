@@ -4,3 +4,10 @@
 # to used for word suggestion
 
 
+# trie
+
+class trieNode:
+    def __init__(self):
+        self.children = {}
+        self.Isend = False
+         
