@@ -10,4 +10,8 @@ class trieNode:
     def __init__(self):
         self.children = {}
         self.Isend = False
-         
+
+
+class Trie:
+    def __init__(self):
+        self.root = trieNode()
