@@ -15,3 +15,13 @@ class trieNode:
 class Trie:
     def __init__(self):
         self.root = trieNode()
+
+    def add(self,word):
+        currentNode =self.root
+
+        for char in word:
+
+            if char not in currentNode.children:
+                currentNode.children[char] = trieNode()
+
+            currentNode  = currentNode.children[char]    
