@@ -24,4 +24,9 @@ class Trie:
             if char not in currentNode.children:
                 currentNode.children[char] = trieNode()
 
-            currentNode  = currentNode.children[char]    
+            currentNode  = currentNode.children[char]   
+
+        currentNode.Isend  = True
+
+    def search(self,word):
+                 
