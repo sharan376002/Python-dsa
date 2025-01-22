@@ -29,4 +29,17 @@ class Trie:
         currentNode.Isend  = True
 
     def search(self,word):
-                 
+
+        currentNode =self.root
+
+        for char in word:
+
+            if char not in currentNode.children:
+                return False
+            
+            currentNode  = currentNode.children[char]   
+
+        if currentNode.Isend == True:
+            return True
+        
+        False
