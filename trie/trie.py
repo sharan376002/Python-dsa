@@ -43,3 +43,22 @@ class Trie:
             return True
         
         return False
+
+
+    def remove(self, word):
+        if not self.search(word):
+            print("word not found.. can't remove")
+            return
+        
+
+        currentNode = self.root
+
+        stack = []
+
+        for char in word:
+            stack.append(currentNode)
+            currentNode = currentNode.children[char]
+
+        currentNode.Isend = False
+        while len(stack)>0
+              
