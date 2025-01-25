@@ -42,4 +42,4 @@ class Trie:
         if currentNode.Isend == True:
             return True
         
-        False
+        return False
