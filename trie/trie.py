@@ -60,5 +60,12 @@ class Trie:
             currentNode = currentNode.children[char]
 
         currentNode.Isend = False
-        while len(stack)>0
+        while len(stack)>0:
+            node = stack.pop()
+            character = word[len(stack)]
+            if not node.children[character].Isend and not node.children[character].childeren:
+                del node.children[character]
+
+            else:
+                break    
               
