@@ -1,0 +1,21 @@
+
+
+
+
+ heap is slightly similar to the binary tree
+
+
+   MIN
+    ^
+    |
+    |       min heap
+    |
+   MAX
+
+   
+   MAX
+    ^
+    |        max heap
+    |
+    |
+   MIN
