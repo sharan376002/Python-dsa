@@ -31,4 +31,5 @@ class heapnode:
             node.right = heapnode(data)    
             
         else:
-            if     
+            if  self.getcount(node.left) <= self.getcount(node.right):
+                self.recursiveadd(data,node.left)   
