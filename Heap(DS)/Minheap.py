@@ -18,4 +18,17 @@ class heapnode:
 
         if not self.root:
             self.root = heapnode(data)
-            return    
+            return
+        
+        self.recursiveadd(data,self.root)
+
+
+    def recursiveadd(self,data,node):
+        if not node.left:
+            node.left = heapnode(data)
+
+        elif not node.right:
+            node.right = heapnode(data)    
+            
+        else:
+            if     
