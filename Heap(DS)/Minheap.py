@@ -52,7 +52,23 @@ class minheap:
     def heapifyup(self,node):
         while node and node != self.root:
             parentnode  = self.getparent(node,self.root)
-            if parentnode.data > node.data 
+            if parentnode.data > node.data:
+                parentnode.data , node.data = node.data,parentnode.data
+                node = parentnode
+
+            else:
+                break
 
 
-    def getparent(self,node,root)                
+
+    def getparent(self,node,root):
+        if node.left == node or root.right == node:
+            return root
+
+        if root.left:
+            parent = self.getparent(node,root.left)
+            if parent: return parent
+        
+        if root.right:
+             parent = self.getparent(node,root.right)
+            if parent: return parent
