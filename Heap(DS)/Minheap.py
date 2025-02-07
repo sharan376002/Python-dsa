@@ -77,3 +77,8 @@ class minheap:
 
 heapnode = minheap()
 heapnode.add("S")
+heapnode.add("h")
+heapnode.add("a")
+heapnode.add("r")
+heapnode.add("a")
+heapnode.add("n")
