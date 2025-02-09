@@ -82,3 +82,7 @@ heapnode.add("a")
 heapnode.add("r")
 heapnode.add("a")
 heapnode.add("n")
+heapnode.add("l")
+heapnode.add("e")
+
+
