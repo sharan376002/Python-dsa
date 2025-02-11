@@ -23,7 +23,7 @@ class minheap:
         self.recursiveadd(data,self.root)
 
 
-    def recursiveadd(self,data,node):
+    def recursiveadd(self,data,node): # to add continous heap values we use a heap ds
         if not node.left:
             node.left = heapnode(data)
             self.heapifyup(node.left)
