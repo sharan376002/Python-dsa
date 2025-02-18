@@ -3,7 +3,10 @@
 
 
  heap is slightly similar to the binary tree
+they are two typws of heaps 
 
+-> min heap 
+-> max heap
 
    MIN
     ^
