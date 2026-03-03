@@ -1,12 +1,15 @@
+arr =[]
+
+window_invalid =True
 left = 0
 for right in range(len(arr)):
     
     # expand window
-    add(arr[right])
+    #add(arr[right])
     
     # shrink while invalid
     while window_invalid:
-        remove(arr[left])
+        #remove(arr[left])
         left += 1
     
     # update result
