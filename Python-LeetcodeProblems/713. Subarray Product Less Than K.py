@@ -10,15 +10,19 @@ l=0
 for r in range(len(nums)):
 
     sums *=nums[r]
+    """
     if nums[r] <k:
         sub_count +=1
     if sums <k:
         sub_count +=1   
+        """
     
-    while l<r and  sums >=k:
-        sums -=nums[l]
+    while l<=r and  sums >=k:
+        sums //=nums[l]
 
         l+=1
+
+    sub_count += (r-l+1)
 
     
 print(sub_count)
